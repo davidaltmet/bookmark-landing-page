@@ -6,14 +6,10 @@ function ExtensionCard({
   paragraphExten,
   marginTop,
 }) {
-  const { showAnimation, sectionRef } = useScrollAnimation();
-
   return (
     <div
       ref={sectionRef}
-      className={`p-4 shadow-xl flex flex-col justify-center items-center  ${marginTop}   ${
-        showAnimation ? "translate-y-0" : "-translate-y-full"
-      } duration-500`}
+      className={`p-4 shadow-xl flex flex-col justify-center items-center  ${marginTop}  `}
     >
       <img className="pb-8" src={imgExtension} />
       <div className="flex flex-col justify-center items-center space-y-1  ">
@@ -28,3 +24,7 @@ function ExtensionCard({
 }
 
 export default ExtensionCard;
+// const { showAnimation, sectionRef } = useScrollAnimation();
+//  ${
+//         showAnimation ? "translate-y-0" : "-translate-y-full"
+//       } duration-500

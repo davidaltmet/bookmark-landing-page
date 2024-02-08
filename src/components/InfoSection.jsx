@@ -1,14 +1,10 @@
 import useScrollAnimation from "../components/useScrollAnimation";
 
 function InfoSection({ title, paragraph }) {
-  const { showAnimation, sectionRef } = useScrollAnimation();
-
   return (
     <div
       ref={sectionRef}
-      className={`w-full flex flex-col justify-center items-center  xl:px-28 md:py-10 space-y-4 ${
-        showAnimation ? "traslate-y-0" : "-translate-y-full"
-      } duration-500`}
+      className={`w-full flex flex-col justify-center items-center  xl:px-28 md:py-10 space-y-4 `}
     >
       <h2 className="text-3xl md:text-4xl text-center text-VeryDarkBlue ">
         {title}
@@ -21,3 +17,7 @@ function InfoSection({ title, paragraph }) {
 }
 
 export default InfoSection;
+// const { showAnimation, sectionRef } = useScrollAnimation();
+// // ${
+// //         showAnimation ? "traslate-y-0" : "-translate-y-full"
+// //       } duration-500
