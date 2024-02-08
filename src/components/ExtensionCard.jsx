@@ -8,7 +8,6 @@ function ExtensionCard({
 }) {
   return (
     <div
-      ref={sectionRef}
       className={`p-4 shadow-xl flex flex-col justify-center items-center  ${marginTop}  `}
     >
       <img className="pb-8" src={imgExtension} />
@@ -24,6 +23,7 @@ function ExtensionCard({
 }
 
 export default ExtensionCard;
+//  ref = { sectionRef };
 // const { showAnimation, sectionRef } = useScrollAnimation();
 //  ${
 //         showAnimation ? "translate-y-0" : "-translate-y-full"
