@@ -1,4 +1,4 @@
-import useScrollAnimation from "./useScrollAnimation.js";
+import useScrollAnimation from "./useScrollAnimation";
 
 function ExtensionCard({
   imgExtension,

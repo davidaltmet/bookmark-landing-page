@@ -1,4 +1,4 @@
-import useScrollAnimation from "../components/useScrollAnimation.js";
+import useScrollAnimation from "../components/useScrollAnimation";
 
 function InfoSection({ title, paragraph }) {
   const { showAnimation, sectionRef } = useScrollAnimation();
